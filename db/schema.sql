@@ -33,4 +33,9 @@ connection.query("
 		devoured FALSE,
 		date TIMESTAMP
 		PRIMARY KEY(id)
-		);")
+		);", function (err, res){
+
+			if (err) throw err;
+
+			console.log ("Table Created");
+});
